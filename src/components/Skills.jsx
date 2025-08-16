@@ -3,42 +3,125 @@ import {
   FaDatabase,
   FaProjectDiagram,
   FaUsers,
+  FaJsSquare,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaPython,
+  FaTrello,
+  FaJira,
+  FaChartLine,
+  FaLightbulb,
+  FaComments,
+  FaBrain,
 } from "react-icons/fa";
 
 const Skills = () => {
   const skills = [
     {
-      icon: (
-        <FaLaptopCode className="text-4xl text-blue-600" aria-hidden="true" />
-      ),
+      icon: <FaLaptopCode className="text-4xl text-blue-600" />,
       title: "Desenvolvimento Web & Mobile",
-      desc: "Habilidades em React, Next.js, React Native, HTML, CSS, JavaScript, TypeScript e Tailwind CSS, criando interfaces responsivas e modernas.",
-      link: "#web-mobile",
+      items: [
+        {
+          icon: <FaReact className="text-cyan-500" />,
+          name: "React / React Native",
+        },
+        {
+          icon: <FaJsSquare className="text-yellow-500" />,
+          name: "JavaScript / TypeScript",
+        },
+        { icon: <FaHtml5 className="text-orange-500" />, name: "HTML5" },
+        {
+          icon: <FaCss3Alt className="text-blue-500" />,
+          name: "CSS3 / Tailwind CSS",
+        },
+        { icon: <FaLaptopCode className="text-indigo-600" />, name: "Next.js" },
+      ],
+      link: "#contact",
     },
     {
-      icon: (
-        <FaDatabase className="text-4xl text-green-600" aria-hidden="true" />
-      ),
+      icon: <FaDatabase className="text-4xl text-green-600" />,
       title: "Banco de Dados & Análise de Dados",
-      desc: "Competências em modelagem de dados, SQL, Python, Pandas, Matplotlib e APIs para manipulação, análise e visualização de dados.",
-      link: "#data-analysis",
+      items: [
+        { icon: <FaDatabase className="text-green-600" />, name: "SQL" },
+        { icon: <FaPython className="text-yellow-600" />, name: "Python" },
+        {
+          icon: <FaLaptopCode className="text-indigo-600" />,
+          name: "Pandas & Matplotlib",
+        },
+        {
+          icon: <FaLaptopCode className="text-indigo-600" />,
+          name: "APIs REST",
+        },
+        {
+          icon: <FaLaptopCode className="text-indigo-600" />,
+          name: "Data Visualization",
+        },
+      ],
+      link: "#contact",
     },
     {
-      icon: (
-        <FaProjectDiagram
-          className="text-4xl text-yellow-600"
-          aria-hidden="true"
-        />
-      ),
+      icon: <FaProjectDiagram className="text-4xl text-yellow-600" />,
       title: "Gestão de Projetos & Processos",
-      desc: "Experiência em BPM, Scrumban, ERP, gestão de tempo e projetos, indicadores de desempenho (KPI) e desenvolvimento de painéis de controle.",
-      link: "#project-management",
+      items: [
+        {
+          icon: <FaChartLine className="text-green-600" />,
+          name: "Metodologias Ágeis (Scrum, Kanban)",
+        },
+        {
+          icon: <FaTrello className="text-blue-500" />,
+          name: "Trello / Notion",
+        },
+        { icon: <FaJira className="text-indigo-600" />, name: "Jira Software" },
+        {
+          icon: <FaLaptopCode className="text-indigo-600" />,
+          name: "OKRs e KPIs",
+        },
+        {
+          icon: <FaLaptopCode className="text-indigo-600" />,
+          name: "Gestão de Stakeholders",
+        },
+        {
+          icon: <FaLaptopCode className="text-indigo-600" />,
+          name: "ERP & Automação de Processos",
+        },
+      ],
+      link: "#contact",
     },
     {
-      icon: <FaUsers className="text-4xl text-purple-600" aria-hidden="true" />,
+      icon: <FaUsers className="text-4xl text-purple-600" />,
       title: "Competências Profissionais & UX",
-      desc: "Foco em User Experience, trabalho em equipe, resolução de conflitos, raciocínio lógico, escrita técnica e inglês técnico aplicado à computação.",
-      link: "#professional-skills",
+      items: [
+        {
+          icon: <FaUsers className="text-purple-600" />,
+          name: "User Experience & UI Research",
+        },
+        {
+          icon: <FaComments className="text-blue-600" />,
+          name: "Comunicação Assertiva",
+        },
+        {
+          icon: <FaLightbulb className="text-yellow-500" />,
+          name: "Liderança Colaborativa",
+        },
+        {
+          icon: <FaBrain className="text-pink-500" />,
+          name: "Pensamento Crítico & Resolução de Problemas",
+        },
+        {
+          icon: <FaUsers className="text-purple-600" />,
+          name: "Trabalho em Equipe & Gestão de Conflitos",
+        },
+        {
+          icon: <FaLaptopCode className="text-indigo-600" />,
+          name: "Adaptação Tecnológica (IA Generativa)",
+        },
+        {
+          icon: <FaUsers className="text-purple-600" />,
+          name: "Inglês Técnico Profissional",
+        },
+      ],
+      link: "#contact",
     },
   ];
 
@@ -46,30 +129,20 @@ const Skills = () => {
     <section
       id="skills"
       className="py-20 overflow-hidden bg-gradient-to-r from-blue-50 to-indigo-100"
-      aria-labelledby="skills-heading"
     >
       <div className="container mx-auto px-4">
-        <header
-          className="text-center mb-16"
-          data-aos-delay="500"
-          data-aos="fade-up"
-        >
-          <h2
-            id="skills-heading"
-            className="text-3xl md:text-4xl font-bold text-gray-800 mb-4"
-          >
+        <header className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Minhas <span className="text-blue-600">Habilidades</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Aqui apresento minhas principais competências técnicas e
-            profissionais, alinhadas com as demandas do mercado de trabalho
-            atual.
+            profissionais, alinhadas com as demandas do mercado de trabalho.
           </p>
         </header>
 
         <ul
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-          data-aos-delay="500"
           data-aos="fade-up"
         >
           {skills.map((skill, index) => (
@@ -79,11 +152,22 @@ const Skills = () => {
                 <h1 className="text-xl font-bold text-gray-800 mb-3">
                   {skill.title}
                 </h1>
-                <p className="text-gray-600 m-6 flex-grow">{skill.desc}</p>
+
+                {/* LISTA DE HABILIDADES EM TABELA */}
+                <table className="w-full text-left text-gray-700 text-sm mb-6">
+                  <tbody>
+                    {skill.items.map((item, i) => (
+                      <tr key={i} className="border-b last:border-0">
+                        <td className="py-2 pr-3 w-8">{item.icon}</td>
+                        <td className="py-2">{item.name}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+
                 <a
                   href={skill.link}
                   className="text-blue-600 font-medium hover:text-blue-700 transition flex items-center mt-auto"
-                  aria-label={`Saiba mais sobre ${skill.title}`}
                 >
                   Saiba mais
                   <svg
@@ -91,43 +175,19 @@ const Skills = () => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M9 5l7 7-7 7"
-                    ></path>
+                    />
                   </svg>
                 </a>
               </article>
             </li>
           ))}
         </ul>
-        <aside
-          data-aos="fade-up"
-          data-aos-delay="500"
-          className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden mt-20"
-        >
-          <div className="relative z-10 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Pronto para realizar seu serviço ou projeto?
-            </h3>
-            <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Entre em contato e descubra como posso ajudar a transformar sua
-              ideia em realidade de forma prática e eficiente.
-            </p>
-            <nav className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href="#contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full flex items-center justify-center transition-colors duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2"
-              >
-                Fale Comigo
-              </a>
-            </nav>
-          </div>
-        </aside>
       </div>
     </section>
   );
