@@ -156,39 +156,19 @@ const Projects = () => {
             </li>
           ))}
         </ul>
-        <aside
-          data-aos="fade-up"
-          data-aos-delay="500"
-          className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden"
-        >
-          <div className="relative z-10 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Pronto para realizar seu serviço ou projeto?
-            </h3>
-            <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Entre em contato e descubra como posso ajudar a transformar sua
-              ideia em realidade de forma prática e eficiente.
-            </p>
-            <nav className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href="https://github.com/WeldonPereira"
-                className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-full flex items-center justify-center gap-2 transition shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
-                aria-label="Conheça mais no GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub className="text-lg" />
-                Conheça mais
-              </a>
-              <a
-                href="#contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full flex items-center justify-center transition-colors duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2"
-              >
-                Fale Comigo
-              </a>
-            </nav>
-          </div>
-        </aside>
+
+        <nav className="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="https://github.com/WeldonPereira"
+            className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-full flex items-center justify-center gap-2 transition shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+            aria-label="Conheça mais no GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-lg" />
+            Conheça mais
+          </a>
+        </nav>
       </div>
     </section>
   );
