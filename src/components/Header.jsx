@@ -9,15 +9,15 @@ const Header = () => {
 
   const navLinks = [
     { href: "#home", label: "Início" },
-    { href: "#projects", label: "Projetos" },
     { href: "#about", label: "Sobre Mim" },
     { href: "#skills", label: "Habilidades" },
+    { href: "#projects", label: "Projetos" },
     { href: "#contact", label: "Contato" },
   ];
 
   return (
     <header className="bg-gradient-to-r from-blue-50 to-indigo-100 sticky top-0 z-50">
-      <div className="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a
           href="/"
           className="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-600 rounded"
