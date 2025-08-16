@@ -145,7 +145,7 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-gray-800 rounded-md"
+                      className="inline-flex items-center text-gray-800 border border-b-gray-800 hover:bg-blue-50 py-1 px-2 transition"
                     >
                       GitHub
                       <FaGithub className="ml-2 text-lg" />
