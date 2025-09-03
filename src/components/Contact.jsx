@@ -35,7 +35,7 @@ const Contact = () => {
       title: "E-mail",
       content: (
         <a
-          href="mailto:weldonbarros179@gmail.com"
+          href="mailto:weldonbarros.dev@gmail.com"
           className="text-gray-600 hover:text-red-500 underline"
         >
           Envie um e-mail
@@ -118,7 +118,7 @@ const Contact = () => {
               </p>
               <div className="flex flex-col md:flex-row gap-4">
                 <a
-                  href="mailto:weldonbarros179@gmail.com"
+                  href="mailto:weldonbarros.dev@gmail.com"
                   className="bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600 transition text-center"
                 >
                   Enviar E-mail
