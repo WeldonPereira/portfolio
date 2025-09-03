@@ -1,4 +1,4 @@
-import coffeeConnect from "../assets/coffeeConnect.png";
+import coffeeConnectImage from "../assets/coffeeConnect.png";
 import dataStructure from "../assets/dataStructure.png";
 import medicApp from "../assets/medicApp.jpg";
 import painelIndicadoresIFPE from "../assets/painelIndicadoresIFPE.png";
@@ -72,7 +72,7 @@ const Projects = () => {
     {
       id: 5,
       name: "Coffee Connect",
-      image: coffeeConnect,
+      image: coffeeConnectImage,
       link: "https://github.com/eduardomatos7/coffe-connect-website",
       description:
         "Aplicação web com landing page moderna que permite cadastro, login de usuários e compras de produtos. Focada em usabilidade, combina design intuitivo e navegação prática.",
