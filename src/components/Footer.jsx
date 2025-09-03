@@ -8,10 +8,10 @@ const Footer = () => {
       ),
       content: (
         <a
-          href="mailto:weldonbarros179@gmail.com"
+          href="mailto:weldonbarros.dev@gmail.com"
           className="text-gray-400 hover:text-red-500 transition"
         >
-          weldonbarros179@gmail.com
+          weldonbarros.dev@gmail.com
         </a>
       ),
     },
