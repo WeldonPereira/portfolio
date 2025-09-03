@@ -1,9 +1,9 @@
-import cineSearch from "../assets/cineSearch.png";
-import indianaJonesGame from "../assets/indianaJonesGame.png";
+import coffeeConnect from "../assets/coffeeConnect.png";
 import dataStructure from "../assets/dataStructure.png";
 import medicApp from "../assets/medicApp.jpg";
 import painelIndicadoresIFPE from "../assets/painelIndicadoresIFPE.png";
 import dashboard from "../assets/dashboard.png";
+import cineSearch from "../assets/cineSearch.png";
 import { FaReact, FaGithub } from "react-icons/fa";
 import {
   SiTypescript,
@@ -14,6 +14,7 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiFigma,
+  SiPrisma,
 } from "react-icons/si";
 const Projects = () => {
   const projects = [
@@ -70,12 +71,17 @@ const Projects = () => {
     },
     {
       id: 5,
-      name: "Indiana Runner",
-      image: indianaJonesGame,
-      link: "https://github.com/joaoadsobral/Projeto-P1",
+      name: "Coffee Connect",
+      image: coffeeConnect,
+      link: "https://github.com/eduardomatos7/coffe-connect-website",
       description:
-        "Game estilo runner onde o jogador desvia de obstáculos, coleta moedas e avança no mapa. Inspirado no universo de Indiana Jones, combina elementos visuais e sonoros imersivos.",
-      skills: [<SiPython key="python5" color="#3776AB" />],
+        "Aplicação web com landing page moderna que permite cadastro, login de usuários e compras de produtos. Focada em usabilidade, combina design intuitivo e navegação prática.",
+      skills: [
+        <SiTailwindcss key="tailwind4" color="#38BDF8" />,
+        <SiTypescript key="ts3" color="#3178C6" />,
+        <SiNextdotjs key="next3" color="#000000" />,
+        <SiPrisma key="prisma" color="#000000" />,
+      ],
     },
     {
       id: 6,
@@ -115,10 +121,10 @@ const Projects = () => {
           {projects.map((project) => (
             <li key={project.id} className="group relative">
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                <figure className="relative h-50 overflow-hidden">
+                <figure className="relative h-48 overflow-hidden">
                   <img
                     src={project.image}
-                    className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                   <span
@@ -126,6 +132,7 @@ const Projects = () => {
                     aria-hidden="true"
                   ></span>
                 </figure>
+
                 <div className="p-6 relative -mt-10">
                   <div className="bg-gradient-to-r from-blue-100 to-indigo-100 rounded-lg shadow-md p-6">
                     <header className="flex items-center justify-between mb-4">
